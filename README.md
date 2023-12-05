@@ -1,6 +1,6 @@
-What is a binary tree?
-Binary Tree is defined as a tree data structure where each node has at most 2 children. 
-Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+What is a binary tree? <br>
+Binary Tree is defined as a tree data structure where each node has at most 2 children. <br>
+Since each element in a binary tree can have only 2 children, we typically name them the left and right child. <br>
 
 Binary Tree Representation
 -----------------------------
@@ -8,19 +8,19 @@ A Binary tree is represented by a pointer to the topmost node (commonly known as
 
 Each node of a Binary Tree contains the following parts:
 ---------------------------------------------------------
-Data
-Pointer to left child
-Pointer to the right child
+Data <br>
+Pointer to left child <br>
+Pointer to the right child <br>
 
 Basic Operation On Binary Tree:
 ---------------------------------
-Inserting an element.
-Removing an element.
-Searching for an element.
-Traversing the tree.
+Inserting an element. <br>
+Removing an element. <br>
+Searching for an element. <br>
+Traversing the tree. <br>
 
 Auxiliary Operation On Binary Tree:
 -------------------------------------
-Finding the height of the tree
-Find the level of a node of the tree
-Finding the size of the entire tree.
+Finding the height of the tree <br>
+Find the level of a node of the tree <br>
+Finding the size of the entire tree. <br>
