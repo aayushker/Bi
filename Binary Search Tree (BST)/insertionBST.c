@@ -14,7 +14,7 @@ typedef struct node{
     struct node *left, *right;
 }Node;
 
-
+// A utility function to create a new BST node
 Node* newNode(int item){
     Node* temp = (Node*)malloc(sizeof(Node));
     temp->data = item;
@@ -22,19 +22,25 @@ Node* newNode(int item){
     return temp;
 }
 
+// A utility function to insert
+// a new node with given key in BST
 Node* insert(Node* node, int key){
+    // If the tree is empty, return a new node
     if (node == NULL){
         return newNode(key);
     }
+    // Otherwise, recur down the tree
     else if (key < node->data){
         node->left = insert(node->left,key);
     }
     else if (key > node->data){
         node->right = insert(node->right,key);
     }
+    // Return the (unchanged) node pointer
     return node;
 }
 
+// A utility function to do inorder traversal of BST
 void inorder(Node* node){
     if (node != NULL){
         inorder(node->left);
@@ -58,3 +64,10 @@ int main(){
 
     return 0;
 }
+
+// Time Complexity: 
+// The worst-case time complexity of insert operations is O(h) where h is the height of the Binary Search Tree. 
+// In the worst case, we may have to travel from the root to the deepest leaf node. 
+// The height of a skewed tree may become n and the time complexity of insertion operation may become O(n). 
+
+// Auxiliary Space: The auxiliary space complexity of insertion into a binary search tree is O(1)
