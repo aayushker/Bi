@@ -12,7 +12,13 @@
 // Boundary Traversal
 // Diagonal Traversal
 
+
+// Algorithm Inorder(tree)
+// Traverse the left subtree, i.e., call Inorder(left->subtree)
+// Visit the root.
+// Traverse the right subtree, i.e., call Inorder(right->subtree)
 // C program for different tree traversals
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -69,3 +75,6 @@ int main()
 	getchar();
 	return 0;
 }
+
+// Time Complexity: O(N)
+// Auxiliary Space: If we don’t consider the size of the stack for function calls then O(1) otherwise O(h) where h is the height of the tree. 
