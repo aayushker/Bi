@@ -12,6 +12,11 @@
 // Boundary Traversal
 // Diagonal Traversal
 
+// Algorithm Postorder(tree)
+// Traverse the left subtree, i.e., call Postorder(left->subtree)
+// Traverse the right subtree, i.e., call Postorder(right->subtree)
+// Visit the root
+
 // C program for different tree traversals
 #include <stdio.h>
 #include <stdlib.h>
@@ -70,3 +75,4 @@ int main()
 	getchar();
 	return 0;
 }
+
